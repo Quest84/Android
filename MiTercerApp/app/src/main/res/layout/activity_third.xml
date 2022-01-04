@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextWeb"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textWebEditText" />
+
+        <EditText
+            android:id="@+id/editTextContacts"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextWeb"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextContacts"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            />
+
+        <ImageButton
+            android:id="@+id/imgButtonPhone"
+            android:layout_width="65dp"
+            android:layout_height="44dp"
+            android:layout_alignBottom="@+id/editTextPhone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/editTextPhone"
+            android:background="@android:color/background_dark"
+            android:src="@android:drawable/stat_sys_phone_call" />
+
+        <ImageButton
+            android:id="@+id/imgButtonWeb"
+            android:layout_width="126dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/editTextWeb"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/editTextWeb"
+            android:background="@android:color/background_dark"
+            android:src="@android:drawable/ic_menu_view" />
+
+        <ImageButton
+            android:id="@+id/imgButtonContacts"
+            android:layout_width="126dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/editTextContacts"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/editTextContacts"
+            android:background="@android:color/background_dark"
+            android:src="@android:drawable/ic_menu_agenda" />
+
+        <ImageButton
+            android:id="@+id/imgButtonEmail"
+            android:layout_width="126dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/editTextEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/editTextEmail"
+            android:background="@android:color/background_dark"
+            android:src="@android:drawable/ic_dialog_email" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imgButtonCamera"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:src="@android:drawable/ic_menu_camera" />
+</RelativeLayout>

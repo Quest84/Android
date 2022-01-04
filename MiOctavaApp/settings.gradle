@@ -1,0 +1,2 @@
+rootProject.name='MiOctavaApp'
+include ':app'

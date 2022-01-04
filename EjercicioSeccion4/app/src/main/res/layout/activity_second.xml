@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="51dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:checkedButton="@id/btnSaludo">
+
+            <RadioButton
+                android:id="@+id/btnSaludo"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Saludo"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/btnDespedida"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Despedida"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:max="80"
+            android:outlineAmbientShadowColor="@android:color/white"
+            android:progress="18">
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/textViewEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:text="18"
+            android:textColor="@color/colorBlueCute"
+            android:textSize="32sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlueCute"
+        android:text="Siguiente"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
